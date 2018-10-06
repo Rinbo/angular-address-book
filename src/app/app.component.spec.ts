@@ -2,13 +2,15 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { Input } from '@angular/core';
+import { CardComponent } from './card/card.component';
 
 describe('AppComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        CardComponent
       ],
       imports: [
         FormsModule
@@ -21,7 +23,7 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  
+
   it('createContact should add contact to contacts', async(() => {
     const contact = {
       name: 'John Doe',
