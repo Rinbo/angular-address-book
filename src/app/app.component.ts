@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-address-book';
+  contact: any;
+
+  constructor() {
+    this.contact = {
+      name: ``,
+      email: ``,
+      company: ``,
+      role: ``,
+      twitter: ``,
+      location: ``,
+      notes: ``
+    }
+  }
+
+  createNewContact() {
+    console.log('Someone clicked me!!!')
+  }
+
 }
