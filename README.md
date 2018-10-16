@@ -3,4 +3,4 @@
 #### Robin Börjesson
 #### 2018-10-06
 
-Create contacts by filling in the fields and selecting add contact. Contacts are stored in your local storage and will not persist.
+Create contacts by filling in the fields and selecting add contact. Contacts are just added to an array in memory and will not persist.
